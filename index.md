@@ -1,0 +1,61 @@
+---
+title       : Stopping Distance vs Car Speed
+subtitle    : 
+author      : 
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Description
+
+- This is an introduction to the application that predicts the stopping distance (ft) of a car based on its speed (mph).
+
+- The prediction is performed by fitting a polynomial to the measured data. 
+
+- Polynomial order can be integers between 1 and 4.
+
+---
+
+## Usage
+cars (dataset)
+
+## Format
+A data frame with 50 observations on 2 variables.
+
+[,1]	speed	numeric	Speed (mph)
+[,2]	dist	numeric	Stopping distance (ft)
+
+## Source
+
+ Ezekiel, M. (1930) Methods of Correlation Analysis. Wiley.
+
+## Reference
+
+ McNeil, D. R. (1977) Interactive Data Analysis. Wiley. 
+
+---
+
+## A plot of the data
+
+```r
+plot(cars, xlab = "Speed (mph)", ylab = "Stopping distance (ft)",
+    las = 1, xlim = c(0, 25), lwd = 2, cex.lab = 1.5, col = 2)
+```
+
+![plot of chunk unnamed-chunk-1](assets/fig/unnamed-chunk-1-1.png) 
+
+---
+
+## Application URL
+https://bdastmalchi.shinyapps.io/Developing_Data_Products
+
+## Disclaimer
+Note that the data were recorded in the 1920s, and might not be accurate for every condition.
+
+
+
